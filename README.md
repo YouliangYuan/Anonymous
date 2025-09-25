@@ -86,7 +86,7 @@ trap cleanup EXIT INT TERM
 
 # ------------------------------------------------------------------------------------------------
 # Get the parameters from the command line
-BASE_MODEL=${1:-"you model path"}
+BASE_MODEL=${1:-"your model path"}
 MAX_EPOCHS=${2:-"12"}
 DATASET=${3:-"polaris"}
 NO_ENTROPY_LOSS_AND_KL=${4:-"True"}
@@ -236,7 +236,7 @@ python3 -m verl.trainer.main_ppo \
 Among them
 
 ```
-BASE_MODEL=${1:-"you model path"}
+BASE_MODEL=${1:-"your model path"}
 VERIFIER_MODEL=${5:-"rubric model path"}
 VERIFIER_SETUP=${6:-"tinyv_only"}
 ```
