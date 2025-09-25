@@ -60,7 +60,7 @@ The reward function for training using RRM is in `verl/utils/reward_score/tinyv.
 
 ```
 #!/bin/bash
-# The config is optimized for 8xA100
+# The config is optimized for 8xA800
 set -x
 cd ./verl
 
