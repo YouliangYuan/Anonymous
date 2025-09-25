@@ -11,6 +11,17 @@ To install our environment, please refer to the TinyV repo.
 
 ## Data Process
 
+
+Please first download our training and test data [here](https://huggingface.co/datasets/anonymous0321/anonmyous) and save them to the `data` directory.
+
+There are four files:
+
+- `train_polaris.parquet`: Training data for RL with RRM.
+- `test_polaris.parquet`: Test data for RL with RRM.
+- `train_rrm.parquet`: Training data for RRM.
+- `test_rrm.parquet`: Test data for RRM.
+
+
 In the experiments, our reward function will be automatically selected based on the `data_source` entry in the training data. The corresponding code is in `verl/utils/reward_score/__init__.py`:
 
 
