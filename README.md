@@ -9,7 +9,7 @@ Our framework is based on [Verl](https://github.com/volcengine/verl) and [TinyV]
 To install our environment, please refer to the TinyV repo.
 
 
-## Data Process
+## Data Processing
 
 
 Please first download our training and test data [here](https://huggingface.co/datasets/anonymous0321/anonmyous) and save them to the `data` directory.
