@@ -218,7 +218,7 @@ python3 -m verl.trainer.main_ppo \
     critic.forward_max_token_len_per_gpu=36000 \
     trainer.critic_warmup=0 \
     trainer.logger=['console','wandb'] \
-    trainer.project_name='TinyV-0429' \
+    trainer.project_name='TinyV' \
     trainer.experiment_name=${RUN_NAME} \
     trainer.nnodes=1 \
     trainer.default_local_dir=$SAVED_DIR \
@@ -243,10 +243,12 @@ VERIFIER_SETUP=${6:-"tinyv_only"}
 Configuration Options:
 
 `BASE_MODEL`: Specifies the policy model to be trained.
+
 `VERIFIER_MODEL`: Specifies the rubric reward model to use for verification.
-`VERIFIER_SETUP`: Defines how TinyV integrates with the training process. Options include:
+
+`VERIFIER_SETUP`: Defines how RRM integrates with the training process. Options include:
 - `tinyv_only`: Uses RRM exclusively for verification, without using rule-based verifiers entirely.
-- `addon`: RRM works alongside existing rule-based verifiers. TinyV is triggered only when the rule-based verifier determines the answer is incorrect.
+- `addon`: RRM works alongside existing rule-based verifiers. RRM is triggered only when the rule-based verifier determines the answer is incorrect.
 
 Important Note: If you intend to use RRM, please add the suffix `_tinyv` to your `data_source` name. Otherwise, it will fall back to the default verifier, which is Prime Math.
 
